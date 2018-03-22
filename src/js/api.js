@@ -9,8 +9,6 @@ export class AsteroidApi{
       request.onload = function(){
         if (this.status == 200){
           resolve(request.response)
-          // let asteroid = JSON.parse(response)
-          // console.log(asteroid);
 
         } else {
           reject(Error(request.statusText))

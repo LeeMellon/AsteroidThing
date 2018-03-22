@@ -5,41 +5,50 @@
     <script type="text/javascript" src="./js/main.js">
     </script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Absolute Magnitude</title>
+    <title>Space Plan</title>
   </head>
   <body>
+    <div id="whiteHeader">
+      <h1>Space Plan</h1>
+      </div>
     <div class="container" id="main">
       <div class="solar-container">
         <div id="solar"></div>
       </div>
       <div class="container" id="words">
-        <h1>Space Life</h1>
-        <h2>Should I come in to work today?</h2>
-        <h2>Make some space plans:</h2>
+        <div class="textWords">
+          <h2>Should I come in to work today? Next week? Ever again?</h2>
+          <h3>I'm planing a vacation, should I go sooner?</h3>
+          <h4>Will an asteroid ruin it?</h4>
+          <h4>Make some space plans:</h4>
+          <h5>Enter up to a one week time span and <br> see which Near Earth Objects <br> considered BY NASA! to be <br>"potentially hazardous asteroid" <br> could be heading our way.</h5>
+        </div>
         <form id="roid-dates" action="index.html" method="get">
           <label for="start_date">Start Date</label>
           <input type="date" name="" value="" id="start_date">
           <label for="end_date">End Date</label>
           <input type="date" name="" value="" id="end_date">
-          <button type="button" id="roid-butt"></button>
+          <button type="button" id="roid-butt">Submit!</button>
         </form>
         <div class="w3-container w3-row">
           <div class="w3-quarter">
             <ul id="roids">Asteroid Name</ul>
           </div>
           <div class="w3-quarter">
-            <ul id="threatDistance">Miss Distance</ul>
+            <ul id="threatDistance">(probably) Miss by</ul>
           </div>
           <div class="w3-quarter">
             <ul id="velocity">Velocity</ul>
           </div>
           <div class="w3-quarter">
-            <ul id="timeUntilImpact">Time Until Impact * </ul>
+            <ul id="timeUntilImpact">Time Until Impact* </ul>
           </div>
         </div>
-        <p>*Should the asteroid suddenly change it's trajectory to a collision event with EARTH</p>
+        <div class="w3-container" id="results">
+        </div>
+        <p>*Should the asteroid have a sudden change in heart or trajectory that puts it on a collision course with EARTH</p>
+        <p>*Also: you can move this solar system</p>
       </div>
     </div>
-    <!-- <div class="canvas"></div> -->
   </body>
 </html>
