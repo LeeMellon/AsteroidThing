@@ -1,13 +1,33 @@
-body {
-  /*background: black;*/
-  /*user-select: none;*/
+
+
+#solar {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
 }
-canvas {
+
+#words {
+	position: absolute;
+	margin: auto;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 10;
+}
+
+body {
+  background: black;
+  color: white;
+}
+/*canvas {
   cursor: pointer;
   outline: 1px solid white;
   outline-offset: 1px;
-}
-footer {
+}*/
+/*footer {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -20,9 +40,9 @@ footer {
   cursor: default;
   z-index: 999;
   background: rgba(0,0,0,0.75);
-}
-p span {
+}*/
+/*p span {
   color: #FF0;
   font-weight: bold;
   text-decoration: underline;
-}
+}*/

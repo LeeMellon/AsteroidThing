@@ -2,18 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="./solarsytem.js">
+    <script type="text/javascript" src="./js/main.js">
     </script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Absolute Magnitude</title>
   </head>
   <body>
-    <label for="start_date">Start Date</label>
-    <form id="roid-dates" action="index.html" method="get">
-      <input type="date" name="" value="" id="start_date">
-      <input type="date" name="" value="" id="end_date">
-      <button type="button" id="roid-butt"></button>
-    </form>
-    <ul id="roids"></ul>
-    <div class="canvas"></div>
+    <div class="container" id="main">
+      <div class="solar-container">
+        <div id="solar"></div>
+      </div>
+      <div class="container" id="words">
+        <h1>Space Life</h1>
+        <h2>Should I come in to work today?</h2>
+        <h2>Make some space plans:</h2>
+        <form id="roid-dates" action="index.html" method="get">
+          <label for="start_date">Start Date</label>
+          <input type="date" name="" value="" id="start_date">
+          <label for="end_date">End Date</label>
+          <input type="date" name="" value="" id="end_date">
+          <button type="button" id="roid-butt"></button>
+        </form>
+        <div class="w3-container w3-row">
+          <div class="w3-quarter">
+            <ul id="roids">Asteroid Name</ul>
+          </div>
+          <div class="w3-quarter">
+            <ul id="threatDistance">Miss Distance</ul>
+          </div>
+          <div class="w3-quarter">
+            <ul id="velocity">Velocity</ul>
+          </div>
+          <div class="w3-quarter">
+            <ul id="timeUntilImpact">Time Until Impact * </ul>
+          </div>
+        </div>
+        <p>*Should the asteroid suddenly change it's trajectory to a collision event with EARTH</p>
+      </div>
+    </div>
+    <!-- <div class="canvas"></div> -->
   </body>
 </html>
