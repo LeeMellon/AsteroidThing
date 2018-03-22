@@ -22,7 +22,6 @@ $(document).ready(function() {
     console.log(asteroid.near_earth_objects);
       for(let i = 0; i < Object.keys(asteroid.near_earth_objects).length; i++){
       let thisAsteroid = Object.keys(asteroid.near_earth_objects)[i];
-      // console.log(thisAsteroid);
         for(let j = 0; j < asteroid.near_earth_objects[thisAsteroid].length; j++){
         let threat = asteroid.near_earth_objects[thisAsteroid][j].is_potentially_hazardous_asteroid
         if (threat == true){
